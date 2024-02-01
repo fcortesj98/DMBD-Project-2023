@@ -60,3 +60,8 @@ Nodes: [12, 0, 2, 2210, 11, 762, 2183, 56, 1, 38]
  Number of cliques: 1956207
  Number of Bridges: 1
  Number of periphery nodes: 743
+
+Neighbors Avg: 1128.8
+Cliques Avg: 2188311.8
+Brigdes Avg: 1.5
+Periphery Avg: 1128.1
