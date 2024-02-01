@@ -1,0 +1,62 @@
+ ***** 2015 - Q4 *****
+Nodes: [12, 0, 11, 762, 2, 2210, 1, 28, 365, 38]
+
+ *** Node 12 ***
+ Number of Neighbors: 1383
+ Number of cliques: 874505
+ Number of Bridges: 6
+ Number of periphery nodes: 1382
+
+ *** Node 0 ***
+ Number of Neighbors: 1310
+ Number of cliques: 872142
+ Number of Bridges: 3
+ Number of periphery nodes: 1309
+
+ *** Node 11 ***
+ Number of Neighbors: 1297
+ Number of cliques: 667190
+ Number of Bridges: 6
+ Number of periphery nodes: 1296
+
+ *** Node 762 ***
+ Number of Neighbors: 1063
+ Number of cliques: 232493
+ Number of Bridges: 7
+ Number of periphery nodes: 1063
+
+ *** Node 2 ***
+ Number of Neighbors: 1059
+ Number of cliques: 853426
+ Number of Bridges: 2
+ Number of periphery nodes: 1058
+
+ *** Node 2210 ***
+ Number of Neighbors: 1043
+ Number of cliques: 291832
+ Number of Bridges: 1
+ Number of periphery nodes: 1043
+
+ *** Node 1 ***
+ Number of Neighbors: 756
+ Number of cliques: 669928
+ Number of Bridges: 1
+ Number of periphery nodes: 755
+
+ *** Node 28 ***
+ Number of Neighbors: 751
+ Number of cliques: 612251
+ Number of Bridges: 0
+ Number of periphery nodes: 750
+
+ *** Node 365 ***
+ Number of Neighbors: 722
+ Number of cliques: 658667
+ Number of Bridges: 0
+ Number of periphery nodes: 721
+
+ *** Node 38 ***
+ Number of Neighbors: 688
+ Number of cliques: 553991
+ Number of Bridges: 1
+ Number of periphery nodes: 687
