@@ -36,5 +36,3 @@ for file in paths:
     periphery_avg = np.average(periphery, axis=0)
     with open(file, 'a') as j:
         j.write(("\n\nNeighbors Avg: " + str(neighbor_avg) + "\nCliques Avg: " + str(cliques_avg) + "\nBrigdes Avg: " + str(bridges_avg) + "\nPeriphery Avg: " + str(periphery_avg)))
-
-
