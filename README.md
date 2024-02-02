@@ -7,12 +7,26 @@ Welcome to the Data Mining for Big Data Project repository. This project is part
 ## Project Description - Task 1
 This task focuses on comparing multiple machine learning and autorregressive methods to perform forecasting of Bitcoin prices, given data from 2015 to mid-2017. The data from 2016 to 2017 is shuffled, to test the accuracy of each model in a setting where, given only 6 days of data points, the predicted value could vary greatly. 
 
+### Repository Contents
+For this task there are only two scripts:
+
+- `feature_analysis.ipynb`: General correlation analysis of the available variables.
+- `price_prediction.ipynb`: Comparative analysis of ML and AR methods for Bitcoin price predictions.
+
+### Prerequisites
+
+- See `requirements.txt` for a list of required Python packages for this specific task.
+  
+### Usage
+
+Jupyter Notebooks are self-contained. Just install dependencies and run!
+
 ## Project Description - Task 2
 
 The primary challenge addressed in this task was doing the community analysis of a blockchain for an specific crypto-currency. It's important to mention that some of these tasks use PySpark, so it's mandatory to setup this tool in your machine before delving into the notebooks and codes on this section. The following guid shows how to setup this tool: https://spark.apache.org/docs/latest/api/python/getting_started/install.html
 
-## Repository Contents
-For this tasks the contents are the following:
+### Repository Contents
+For these tasks the contents are the following:
 
 - `bitcoin_price/`: General Bitcoin price analysis.
 - `community_analysis/`: General Community analysis.
@@ -25,7 +39,7 @@ For this tasks the contents are the following:
 
 - See `requirements.txt` for a list of required Python packages for this specific task. Reminder: PySpark should be installed separately!
 
-## Usage
+### Usage
 
 In order to test a simple script of this section (monetary analysis), do the following steps:
 
