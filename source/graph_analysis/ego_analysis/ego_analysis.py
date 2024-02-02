@@ -2,6 +2,14 @@ import os
 import glob
 import datetime
 
+'''
+Description: File to calculate the ego analysis of the network.
+Author: Basitan Shafer
+Date: 2024-02-02
+References: https://medium.com/orglens/enhancing-employee-social-capital-with-ego-network-analysis-4ff0fc6738e3
+'''
+
+
 # Data Wrangling
 import pandas as pd
 

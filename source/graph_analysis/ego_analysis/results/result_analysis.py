@@ -1,5 +1,12 @@
 import numpy as np
 
+'''
+Description: File to analyze the results of the ego network analysis.
+Author: Basitan Shafer
+Date: 2024-02-02
+References: https://medium.com/orglens/enhancing-employee-social-capital-with-ego-network-analysis-4ff0fc6738e3
+'''
+
 path1 = 'results_2015_Q1.txt'
 path2 = 'results_2015_Q2.txt'
 path3 = 'results_2015_Q3.txt'

@@ -3,6 +3,12 @@ import glob
 import pandas as pd
 import matplotlib.pyplot as plt
 
+'''
+Description: File to calculate the estimated output volume of Bitcoin transactions and visualize it alongside Bitcoin value and transaction metrics.
+Author: Basitan Shafer
+Date: 2024-02-02
+'''
+
 # Read data
 path1 = '../data/data_tokenized/2015-Q1/'
 path2 = '../data/data_tokenized/2015-Q2/'

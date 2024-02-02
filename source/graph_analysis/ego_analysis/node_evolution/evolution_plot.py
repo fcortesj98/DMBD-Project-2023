@@ -1,5 +1,12 @@
 import matplotlib.pyplot as plt
 
+'''
+Description: File to analyze the results of the ego network analysis.
+Author: Basitan Shafer
+Date: 2024-02-02
+References: https://medium.com/orglens/enhancing-employee-social-capital-with-ego-network-analysis-4ff0fc6738e3
+'''
+
 # Your data
 data = [
     [12, 762, 11, 2210, 0, 28, 270, 2, 2636, 278],
