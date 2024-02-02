@@ -5,10 +5,11 @@
 Welcome to the Data Mining for Big Data Project repository. This project is part of the Master's program in Machine Learning and Data Mining at Jean Monnet University. Our team is focused on two-faceted tasks, aiming at both predicting the price of Bitcoin given a year of data containing multiple variables related to the Bitcoin blockchain and study the community structure of the network.
 
 ## Project Description - Task 1
+This task focuses on comparing multiple machine learning and autorregressive methods to perform forecasting of Bitcoin prices, given data from 2015 to mid-2017. The data from 2016 to 2017 is shuffled, to test the accuracy of each model in a setting where, given only 6 days of data points, the predicted value could vary greatly. 
 
 ## Project Description - Task 2
 
-The primary challenge addressed in this task was doing the community analysis of a blockchain for an specific crypto-currency. It's important to mention that some of this tasks use PySpark, so it's mandatory to setup this tool in your machine before delving into the notebooks and codes on this section. The following guid shows how to setup this tool: https://spark.apache.org/docs/latest/api/python/getting_started/install.html
+The primary challenge addressed in this task was doing the community analysis of a blockchain for an specific crypto-currency. It's important to mention that some of these tasks use PySpark, so it's mandatory to setup this tool in your machine before delving into the notebooks and codes on this section. The following guid shows how to setup this tool: https://spark.apache.org/docs/latest/api/python/getting_started/install.html
 
 ## Repository Contents
 For this tasks the contents are the following:
