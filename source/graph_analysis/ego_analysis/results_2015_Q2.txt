@@ -62,6 +62,6 @@ Nodes: [12, 11, 762, 2210, 28, 2, 0, 270, 278, 38]
  Number of periphery nodes: 502
 
 Neighbors Avg: 803.0
-Cliques Avg: 150807.3
+Cliques Avg: nan
 Brigdes Avg: 4.1
 Periphery Avg: 802.4

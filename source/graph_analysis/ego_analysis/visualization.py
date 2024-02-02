@@ -42,5 +42,5 @@ plt.plot(timestamp, bitcoin_values, timestamp, neighbors, timestamp, cliques,  t
 plt.xlabel("Timestamp")
 plt.ylabel("Number of edges and nodes")
 plt.yscale('log')
-plt.legend(['Bitcoin Value in US-Dollar', 'Average Number of Neighbors', 'Average Number of Cliques', 'Average Number of Bridges', 'Average Number of Periphery Nodes'])
+plt.legend(['Bitcoin Value in US-Dollar', 'Average Number of Neighbors', 'Average Number of Bridges', 'Average Number of Periphery Nodes'])
 plt.show()
