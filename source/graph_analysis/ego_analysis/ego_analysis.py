@@ -12,16 +12,16 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from tqdm import tqdm
 
-path1 = '../data_tokens/2015-Q1/'
-path2 = '../data_tokens/2015-Q2/'
-path3 = '../data_tokens/2015-Q3/'
-path4 = '../data_tokens/2015-Q4/'
-path5 = '../data_tokens/2016-Q1/'
-path6 = '../data_tokens/2016-Q2/'
-path7 = '../data_tokens/2016-Q3/'
-path8 = '../data_tokens/2016-Q4/'
-path9 = '../data_tokens/2017-Q1/'
-path10 = '../data_tokens/2017-Q2/'
+path1 = '../data/data_tokenized/2015-Q1/'
+path2 = '../data/data_tokenized/2015-Q2/'
+path3 = '../data/data_tokenized/2015-Q3/'
+path4 = '../data/data_tokenized/2015-Q4/'
+path5 = '../data/data_tokenized/2016-Q1/'
+path6 = '../data/data_tokenized/2016-Q2/'
+path7 = '../data/data_tokenized/2016-Q3/'
+path8 = '../data/data_tokenized/2016-Q4/'
+path9 = '../data/data_tokenized/2017-Q1/'
+path10 = '../data/data_tokenized/2017-Q2/'
 
 files_15_Q1 = glob.glob(os.path.join(path1, "*.csv"))
 files_15_Q2 = glob.glob(os.path.join(path2, "*.csv"))
@@ -34,11 +34,11 @@ files_16_Q4 = glob.glob(os.path.join(path8, "*.csv"))
 files_17_Q1 = glob.glob(os.path.join(path9, "*.csv"))
 files_17_Q2 = glob.glob(os.path.join(path10, "*.csv"))
 
-#df_15_Q1 = pd.concat((pd.read_csv(f) for f in files_15_Q1), ignore_index=True)
-#df_15_Q2 = pd.concat((pd.read_csv(f) for f in files_15_Q2), ignore_index=True)
-#df_15_Q3 = pd.concat((pd.read_csv(f) for f in files_15_Q3), ignore_index=True)
-#df_15_Q4 = pd.concat((pd.read_csv(f) for f in files_15_Q4), ignore_index=True)
-#df_16_Q1 = pd.concat((pd.read_csv(f) for f in files_16_Q1), ignore_index=True)
+df_15_Q1 = pd.concat((pd.read_csv(f) for f in files_15_Q1), ignore_index=True)
+df_15_Q2 = pd.concat((pd.read_csv(f) for f in files_15_Q2), ignore_index=True)
+df_15_Q3 = pd.concat((pd.read_csv(f) for f in files_15_Q3), ignore_index=True)
+df_15_Q4 = pd.concat((pd.read_csv(f) for f in files_15_Q4), ignore_index=True)
+df_16_Q1 = pd.concat((pd.read_csv(f) for f in files_16_Q1), ignore_index=True)
 df_16_Q2 = pd.concat((pd.read_csv(f) for f in files_16_Q2), ignore_index=True)
 df_16_Q3 = pd.concat((pd.read_csv(f) for f in files_16_Q3), ignore_index=True)
 df_16_Q4 = pd.concat((pd.read_csv(f) for f in files_16_Q4), ignore_index=True)
@@ -47,11 +47,11 @@ df_17_Q2 = pd.concat((pd.read_csv(f) for f in files_17_Q2), ignore_index=True)
 
 Graphtype = nx.Graph()
 # Use as normal Graph for Analysis
-#G_15_Q1 = nx.from_pandas_edgelist(df_15_Q1, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
-#G_15_Q2 = nx.from_pandas_edgelist(df_15_Q2, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
-#G_15_Q3 = nx.from_pandas_edgelist(df_15_Q3, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
-#G_15_Q4 = nx.from_pandas_edgelist(df_15_Q4, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
-#G_16_Q1 = nx.from_pandas_edgelist(df_16_Q1, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
+G_15_Q1 = nx.from_pandas_edgelist(df_15_Q1, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
+G_15_Q2 = nx.from_pandas_edgelist(df_15_Q2, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
+G_15_Q3 = nx.from_pandas_edgelist(df_15_Q3, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
+G_15_Q4 = nx.from_pandas_edgelist(df_15_Q4, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
+G_16_Q1 = nx.from_pandas_edgelist(df_16_Q1, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
 G_16_Q2 = nx.from_pandas_edgelist(df_16_Q2, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
 G_16_Q3 = nx.from_pandas_edgelist(df_16_Q3, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
 G_16_Q4 = nx.from_pandas_edgelist(df_16_Q4, 'Source', 'Target', ['value', 'nb_transactions'], create_using=nx.Graph)
@@ -61,9 +61,9 @@ G_17_Q2 = nx.from_pandas_edgelist(df_17_Q2, 'Source', 'Target', ['value', 'nb_tr
 graph_list = [#G_15_Q1, G_15_Q2, G_15_Q3, G_15_Q4, G_16_Q1,
     G_16_Q2, G_16_Q3, G_16_Q4, G_17_Q1, G_17_Q2]
 
-i = 5
+i = 0
 graph_name = "Error"
-with open('results_ego_analysis.txt', 'w') as f:
+with open('evolution_of_nodes.txt', 'w') as f:
     f.write(" ******************************************* \n Ego Analysis " + str(datetime.datetime.now()) + " \n ******************************************* ")
     for G in graph_list:
         if i == 0:
@@ -98,13 +98,12 @@ with open('results_ego_analysis.txt', 'w') as f:
         top_10_nodes = sorted_nodes[:10]
         print("Nodes: " + str(top_10_nodes))
         f.write("\nNodes: " + str(top_10_nodes))
-        for node in tqdm(top_10_nodes):
+        for node in top_10_nodes:
             print("\n *** Node " + str(node) + " ***")
             f.write("\n\n ***** Node " + str(node) + " *****")
             ego_G = nx.ego_graph(G, node, center=True)
             # Cliques
-            cliques_generator = nx.find_cliques(ego_G)
-            num_cliques = sum(1 for _ in cliques_generator)
-            print("Number of cliques: " + str(num_cliques))
-            f.write("\n Number of cliques: " + str(num_cliques))
+            number_of_cliques = nx.number_of_cliques(ego_G)
+            print("Number of cliques: " + str(number_of_cliques))
+            f.write("\n Number of cliques: " + str(number_of_cliques))
             ego_G.clear()

@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+"""
 path1 = 'results_2015_Q1.txt'
 path2 = 'results_2015_Q2.txt'
 path3 = 'results_2015_Q3.txt'
@@ -34,7 +35,7 @@ for file in paths:
             elif line.startswith('Periphery Avg: '):
                 line = line.split('Periphery Avg: ')[1]
                 periphery.append(float(line))
-
+                
 bitcoin_values = [243.39, 257.66, 237.57, 430.05, 417.01, 607.37, 613.93, 997.69, 1079.75, 2499.98]
 timestamp = ["2015 - Q1", "2015 - Q2", "2015 - Q3", "2015 - Q4", "2016 - Q1", "2016 - Q2", "2016 - Q3", "2016 - Q4", "2017 - Q1", "2017 - Q2"]
 plt.figure(figsize=(10, 8))
@@ -43,4 +44,20 @@ plt.xlabel("Timestamp")
 plt.ylabel("Number of edges and nodes")
 plt.yscale('log')
 plt.legend(['Bitcoin Value in US-Dollar', 'Average Number of Neighbors', 'Average Number of Bridges', 'Average Number of Periphery Nodes'])
+plt.grid()
+plt.show()
+"""
+
+## Plot the number of nodes for quaters
+number_of_nodes = [2026, 2221, 2473, 2903, 3123, 3116, 2986, 2801, 2564, 2285]
+number_of_edges = [28777, 36305, 43930, 56993, 83834, 120599, 137074, 73776, 45465, 36217]
+bitcoin_values = [243.39, 257.66, 237.57, 430.05, 417.01, 607.37, 613.93, 997.69, 1079.75, 2499.98]
+timestamp = ["2015 - Q1", "2015 - Q2", "2015 - Q3", "2015 - Q4", "2016 - Q1", "2016 - Q2", "2016 - Q3", "2016 - Q4", "2017 - Q1", "2017 - Q2"]
+plt.figure(figsize=(10, 8))
+plt.plot(timestamp, bitcoin_values, timestamp, number_of_nodes, timestamp, number_of_edges)
+plt.xlabel("Timestamp")
+plt.ylabel("Number of edges and nodes")
+plt.yscale('log')
+plt.legend(['Bitcoin Value in US-Dollar', 'Number of Nodes', 'Number of Edges'])
+plt.grid()
 plt.show()

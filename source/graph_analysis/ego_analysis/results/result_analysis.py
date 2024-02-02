@@ -1,12 +1,17 @@
 import numpy as np
 
-path1 = 'results_2016_Q2.txt'
-path2 = 'results_2016_Q3.txt'
-path3 = 'results_2016_Q4.txt'
-path4 = 'results_2017_Q1.txt'
-path5 = 'results_2017_Q2.txt'
+path1 = 'results_2015_Q1.txt'
+path2 = 'results_2015_Q2.txt'
+path3 = 'results_2015_Q3.txt'
+path4 = 'results_2015_Q4.txt'
+path5 = 'results_2016_Q1.txt'
+path6 = 'results_2016_Q2.txt'
+path7 = 'results_2016_Q3.txt'
+path8 = 'results_2016_Q4.txt'
+path9 = 'results_2017_Q1.txt'
+path10 = 'results_2017_Q2.txt'
 
-paths = [path1, path2, path3, path4, path5]
+paths = [path1, path2, path3, path4, path5, path6, path7, path8, path9, path10]
 
 for file in paths:
     neighbors = []
