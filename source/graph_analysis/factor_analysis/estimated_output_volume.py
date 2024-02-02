@@ -77,10 +77,10 @@ for df in df_list:
 bitcoin_values = [243.39, 257.66, 237.57, 430.05, 417.01, 607.37, 613.93, 997.69, 1079.75, 2499.98]
 timestamp = ["2015 - Q1", "2015 - Q2", "2015 - Q3", "2015 - Q4", "2016 - Q1", "2016 - Q2", "2016 - Q3", "2016 - Q4", "2017 - Q1", "2017 - Q2"]
 plt.figure(figsize=(10, 8))
-plt.title("Comparison of the Sum and the Number of Transaction Values with the Bitcoin Price")
-plt.plot(timestamp, bitcoin_values, timestamp, sums, timestamp, nb_transactions)
+plt.title("Comparison of the Total Output Volume with the Bitcoin Price")
+plt.plot(timestamp, bitcoin_values, timestamp, sums)
 plt.xlabel("Timestamp")
 plt.yscale('log')
-plt.legend(['Bitcoin Value in US-Dollar', 'Sum of Transaction Values', 'Sum of Transaction Numbers'])
+plt.legend(['Bitcoin Value in US-Dollar', 'Total Output Volume'])
 plt.grid()
 plt.show()
