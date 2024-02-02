@@ -1,0 +1,57 @@
+ ********  2016 - Q2 ********
+Nodes: [0, 12, 2, 11, 2183, 2210, 188, 56, 1, 61]
+
+ ***** Node 0 *****
+ Number of Neighbors: 1769
+ Number of Bridges: 2
+ Number of periphery nodes: 1768
+
+ ***** Node 12 *****
+ Number of Neighbors: 1599
+ Number of Bridges: 5
+ Number of periphery nodes: 1598
+
+ ***** Node 2 *****
+ Number of Neighbors: 1408
+ Number of Bridges: 1
+ Number of periphery nodes: 1407
+
+ ***** Node 11 *****
+ Number of Neighbors: 1346
+ Number of Bridges: 1
+ Number of periphery nodes: 1345
+
+ ***** Node 2183 *****
+ Number of Neighbors: 1143
+ Number of Bridges: 5
+ Number of periphery nodes: 1143
+
+ ***** Node 2210 *****
+ Number of Neighbors: 1087
+ Number of Bridges: 1
+ Number of periphery nodes: 1087
+
+ ***** Node 188 *****
+ Number of Neighbors: 1062
+ Number of Bridges: 6
+ Number of periphery nodes: 1061
+
+ ***** Node 56 *****
+ Number of Neighbors: 946
+ Number of Bridges: 2
+ Number of periphery nodes: 945
+
+ ***** Node 1 *****
+ Number of Neighbors: 891
+ Number of Bridges: 0
+ Number of periphery nodes: 890
+
+ ***** Node 61 *****
+ Number of Neighbors: 821
+ Number of Bridges: 0
+ Number of periphery nodes: 821
+
+Neighbors Avg: 1207.2
+Cliques Avg: nan
+Brigdes Avg: 2.3
+Periphery Avg: 1206.5
